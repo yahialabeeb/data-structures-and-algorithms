@@ -115,10 +115,11 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  let reg = /(\b[A-Z])\w*/g;
-  return str.match(reg);
+  let arrresult = []
+  arrresult = str.match(/\b[A-Z]\w*/g) 
+  arrresult = (arrresult === null)? []:arrresult;
+return arrresult
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
