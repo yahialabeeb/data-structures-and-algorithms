@@ -23,3 +23,4 @@ To run your tests
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 ### Table of contents 
 1. [array-reverse](python/code_challenges/array-reverse/Read_me.md)
+2. [array-insert-shift](python/code_challenges/array-insert-shift/README.md)
