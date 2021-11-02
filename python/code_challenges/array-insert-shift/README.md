@@ -5,6 +5,6 @@
 ![reveinsert_shiftrse](insert_shift.png)
 
 ## Approach & Efficiency
-1.simple math 
-2.one for loop to itreate inside the list.
-3.swaping 
+
+1. simple math
+2. one for loop to itreate inside the list.
