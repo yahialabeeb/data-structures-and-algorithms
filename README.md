@@ -24,3 +24,4 @@ To run your tests
 ### Table of contents 
 1. [array-reverse](python/code_challenges/array-reverse/Read_me.md)
 2. [array-insert-shift](python/code_challenges/array-insert-shift/README.md)
+3. [array-binary-search](python/code_challenges/BinarySearch/Read_me.md)
