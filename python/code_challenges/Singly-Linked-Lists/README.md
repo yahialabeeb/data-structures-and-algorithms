@@ -1,12 +1,18 @@
 # Singly Linked List
-<!-- Short summary or background information -->
+> A Linked List is a sequence of Nodes that are connected/linked to each other. The most defining feature of a Linked List is that each Node references the next Node in the link.
 
 ## Challenge
-<!-- Description of the challenge -->
+understand the concept of linked list then make a simple one that has some methods
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+> The approach was right the strcture then make tests guided me in writing code
 
 ## API
-<!-- Description of each method publicly available to your Linked List -->
+ ### insert
+  * This method is to add a value at the end of list.
+ ### include 
+  * This Method is to check if an value in the list or not.
+ ### __str__ 
+  * To get a good out put whhile printing
+
 
