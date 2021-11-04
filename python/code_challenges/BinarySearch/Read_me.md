@@ -6,4 +6,3 @@
 ## Approach & Efficiency
 1. logrithm in math 
 2. while loop and if else statment 
-
