@@ -8,7 +8,12 @@ class Linked_list():
     def __init__(self):
         self.head = None
 
-    def insert(self,value):
+    def insert(self, value):
+        node = Node(value)
+        self.head = node
+
+
+    def append(self,value):
         node = Node(value)
         if self.head:
             current = self.head
@@ -16,7 +21,7 @@ class Linked_list():
                 current = current.next
             current.next = node                
         else:
-            self.head = node
+            self.insert(value)
             
 
     def include(self,value):
@@ -44,4 +49,9 @@ class Linked_list():
             output = "Empty"
             return output
 
-        
+    def insert_before(self,value,new_val):
+        pass
+
+    def insert_after(self,value,new_val):
+        pass
+
