@@ -11,6 +11,15 @@ class Linked_list():
     def insert(self,value):
         node = Node(value)
         if self.head:
+            node.next =self.head
+            self.head = node
+        else:
+            self.head = node
+
+
+    def append(self,value):
+        node = Node(value)
+        if self.head:
             current = self.head
             while current.next:
                 current = current.next
@@ -44,4 +53,30 @@ class Linked_list():
             output = "Empty"
             return output
 
+    def insert_before(self,val,new_val):
+        node = Node(new_val)
+        if self.head.value == val:
+            node.next = self.head
+            self.head = node
+        else:
+            current = self.head
+            
+            while current:
+                if val == current.next.value:
+                    node.next = current.next
+                    current.next = node
+                    break
+                current = current.next
+
+
+    def insert_after(self,val,new_val):
+        node = Node(new_val)
+        current = self.head
+        while current:
+            if val == current.value:
+                node.next = current.next
+                current.next = node
+                break
+            current = current.next
         
+
