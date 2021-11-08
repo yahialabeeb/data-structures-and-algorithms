@@ -10,8 +10,8 @@ def test_version():
 def ll():
     ll = Linked_list()
     ll.insert(1)
-    ll.insert(2)
-    ll.insert("man")
+    ll.append(2)
+    ll.append("man")
     return ll
 
 
