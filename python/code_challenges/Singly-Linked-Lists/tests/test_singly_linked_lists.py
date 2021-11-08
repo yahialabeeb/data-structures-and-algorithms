@@ -92,3 +92,4 @@ def test_insert_after_all(ll):
     excepted = "head => 1 => 2 => man => man2 => None"
     actual = ll.__str__()
     assert excepted == actual
+

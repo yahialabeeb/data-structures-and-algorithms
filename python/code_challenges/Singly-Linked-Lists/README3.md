@@ -1,8 +1,8 @@
 # Challenge Summary
-* Add new method to the linked list class
+
 
 ## Whiteboard Process
-![white](./inkedin_list.png)
+![Whiteboard](./linkedlistkth.png)
 
 ## Approach & Efficiency
 * Test orianted coding by checking the result of test then coding
