@@ -13,6 +13,11 @@ understand the concept of linked list then make a simple one that has some metho
  ### include 
   * This Method is to check if an value in the list or not.
  ### __str__ 
-  * To get a good out put whhile printing
+  * To get a good output while printing
+
+
+
+
+
 
 
