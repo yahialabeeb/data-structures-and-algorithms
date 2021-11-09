@@ -90,3 +90,24 @@ class Linked_list():
             return current.value
         else:
             raise Exception
+
+
+def zipLists(list1, list2):
+    list1_current = list1.head
+    list2_current = list2.head
+    new_ll = Linked_list()
+    while list1_current:
+        if list2_current:
+            new_ll.append(list1_current.value)
+            new_ll.append(list2_current.value)
+            list1_current = list1_current.next
+            list2_current = list2_current.next
+        else:
+            break
+    while list1_current:
+        new_ll.append(list1_current.value)
+        list1_current = list1_current.next
+    while list2_current:
+        new_ll.append(list2_current.value)
+        list2_current = list2_current.next
+    return new_ll
