@@ -89,21 +89,19 @@ class Linked_list():
                 current = current.next
             return current.value
         else:
-            raise Exception
+            raise Exception("wrong index")
 
 
-def zipLists(list1, list2):
+def zip_lists_old(list1, list2):
     list1_current = list1.head
     list2_current = list2.head
     new_ll = Linked_list()
-    while list1_current:
-        if list2_current:
-            new_ll.append(list1_current.value)
-            new_ll.append(list2_current.value)
-            list1_current = list1_current.next
-            list2_current = list2_current.next
-        else:
-            break
+    while list1_current != None & list2_current != None:
+        new_ll.append(list1_current.value)
+        new_ll.append(list2_current.value)
+        list1_current = list1_current.next
+        list2_current = list2_current.next
+
     while list1_current:
         new_ll.append(list1_current.value)
         list1_current = list1_current.next
@@ -111,4 +109,23 @@ def zipLists(list1, list2):
         new_ll.append(list2_current.value)
         list2_current = list2_current.next
     return new_ll
+
+
+def zip_lists(list1, list2):
+    list1_current = list1.head
+    list2_current = list2.head
+    while list1_current and list2_current:
+        temp = list1_current.next
+        temp2 = list2_current.next
+        list2_current.next = temp
+        list1_current.next = list2_current
+        if not temp:
+            temp3 = list1_current.next
+        list1_current = temp
+        list2_current = temp2
+    while list2_current:
+        temp3.next =list2_current
+        list2_current =list2_current.next
+    return list1
+    
 
