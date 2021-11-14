@@ -128,4 +128,3 @@ def zip_lists(list1, list2):
         list2_current =list2_current.next
     return list1
     
-
