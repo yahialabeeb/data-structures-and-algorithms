@@ -17,6 +17,7 @@ class Stack:
         if not self.top:
             raise Exception("Empty")
         
+
         temp = self.top
         self.top = temp.next
         return temp
@@ -41,6 +42,8 @@ class Stack:
             output = "Empty"
             return output
 
+
+         
 class Queue:
     def __init__(self):
         self.rear = None
@@ -87,6 +90,4 @@ class Queue:
 
 new_stack = Stack()
 new_stack.push(1)
-
-
 print(new_stack)
