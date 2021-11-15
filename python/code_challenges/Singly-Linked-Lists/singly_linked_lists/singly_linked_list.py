@@ -18,6 +18,7 @@ class Linked_list():
         else:
             self.head = node
 
+
     def append(self, value):
         node = Node(value)
         if self.head:
