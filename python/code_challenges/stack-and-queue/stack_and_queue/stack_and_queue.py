@@ -17,8 +17,9 @@ class Stack:
         if not self.top:
             raise Exception("Empty")
         
-        temp = self.top.value
-        self.top = self.top.next
+
+        temp = self.top
+        self.top = temp.next
         return temp
 
     def peek(self):
@@ -42,6 +43,7 @@ class Stack:
             return output
 
 
+         
 class Queue:
     def __init__(self):
         self.rear = None
@@ -86,8 +88,6 @@ class Queue:
             output = "Empty"
             return output
 
-# new_stack = Stack()
-# new_stack.push(1)
-
-
-# print(new_stack)
+new_stack = Stack()
+new_stack.push(1)
+print(new_stack)
