@@ -72,7 +72,8 @@ class Binary_tree:
                 self.max_num = root.value
         if self.root:
             walk_inside_tree(self.root)
-        return self.max_num
+            return self.max_num
+        raise Exception
 
 
 class Binary_search_tree():
@@ -144,9 +145,9 @@ third_n = Node(3)
 first_n.left = second_n
 first_n.right = third_n
 second_n.left=Node(4)
-second_n.right = Node(5)
+second_n.right = Node(8)
 third_n.left = Node(6)
-third_n.right = Node(7)
+third_n.right = Node(8)
 binary_tree=Binary_tree(first_n)
 # binary_tree.pre_order()
 # binary_tree.in_order()
