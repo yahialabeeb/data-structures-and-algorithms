@@ -63,5 +63,8 @@ def test_postorder_tree(binary):
     excepted = [4, 5, 2, 6, 7, 3, 1]
     assert actual == excepted
 
-
-
+# check max
+def test_max_tree(binary):
+    actual = binary.max() 
+    excepted = 7
+    assert actual == excepted
