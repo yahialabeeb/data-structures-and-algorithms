@@ -145,14 +145,14 @@ third_n = Node(3)
 first_n.left = second_n
 first_n.right = third_n
 second_n.left=Node(4)
-second_n.right = Node(8)
-third_n.left = Node(6)
-third_n.right = Node(8)
+second_n.right = Node(5)
+# third_n.left = Node(6)
+third_n.right = Node(7)
 binary_tree=Binary_tree(first_n)
 # binary_tree.pre_order()
 # binary_tree.in_order()
 # binary_tree.post_order()
-print(binary_tree.max_globle())
+
 # binary_search_tree=Binary_search_tree()
 # binary_tree=Binary_tree(binary_search_tree.add(5))
 # binary_search_tree.add(7)

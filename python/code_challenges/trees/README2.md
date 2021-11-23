@@ -1,11 +1,11 @@
 # Challenge Summary
-create  method that find the max value in a tree 
+create a function that using Breadth first traversal to iterates  through the tree
 ## Whiteboard Process
-![board](tree_max.png)
+![board](tree_breadth_first.png)
 
 ## Approach & Efficiency
 Time O(n)
-space O(1)
+space O(n)
 
 ## Solution
-[click here to see it](trees/trees.py)
+[click here to see it](trees/breadth_first.py)
