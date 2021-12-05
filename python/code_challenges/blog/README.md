@@ -1,8 +1,8 @@
 # Challenge Summary
-<!-- Description of the challenge -->
+write a blog discribing what is Insertion sort and how to write a function 
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![w](whiteboard.PNG)
 
 ## Approach & Efficiency
 ### Time: O(n^2)
