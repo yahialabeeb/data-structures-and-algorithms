@@ -82,8 +82,7 @@ class Binary_search_tree():
         self.current = None
     def add(self,value):
         def rec_add(value):
-            if self.current.value == value : 
-                raise Exception("already exist")
+
             if self.current.value > value : 
                 
                 if self.current.left:
@@ -92,7 +91,7 @@ class Binary_search_tree():
                 else:
                     self.current.left = Node(value)
 
-            if self.current.value < value :
+            if self.current.value <= value :
             
                 if self.current.right:
                     self.current = self.current.right
