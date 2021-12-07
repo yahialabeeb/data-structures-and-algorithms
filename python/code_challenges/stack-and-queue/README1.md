@@ -2,7 +2,7 @@
 create queue enqueue and dequeue using stacks
 
 ## Whiteboard Process
-![image](pseudo_code.JPG)
+![image](new.JPG)
 
 ## Approach & Efficiency
 enqueue :
