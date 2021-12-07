@@ -27,5 +27,6 @@ def swap(arr, i, low):
     temp = arr[i]
     arr[i] = arr[low]
     arr[low] = temp
-
-quick_sort()
+x = [2,3,5,7,13,11]
+quick_sort(x,0,5)
+print(x)
