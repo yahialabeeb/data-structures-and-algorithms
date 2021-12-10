@@ -2,11 +2,11 @@ def quick_sort(arr, left, right):
     if left < right:
         # partition the array by setting the position of the pivot value
         position = partition(arr, left, right)
-        # Sort the left
+        print(arr)
         quick_sort(arr, left, position - 1)
         # Sort the right
         quick_sort(arr, position + 1, right)
-
+        
 def partition(arr, left, right):
     # set a pivot value as a point of reference
     pivot = arr[right]
@@ -21,12 +21,15 @@ def partition(arr, left, right):
     # all numbers smaller than the pivot are on the left, larger on the right.
     swap(arr, right, low + 1)
     # return the pivot index point
+    
     return low + 1
 
 def swap(arr, i, low):
     temp = arr[i]
     arr[i] = arr[low]
     arr[low] = temp
-x = [2,3,5,7,13,11]
+    
+
+x = [20,18,12,8,5,13]
 quick_sort(x,0,5)
-print(x)
+
