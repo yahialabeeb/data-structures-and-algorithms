@@ -5,8 +5,18 @@ Hashtables are a data structure that utilize key value pairs, the basic idea of 
 write the code for the basic four methods 
 
 ## Approach & Efficiency
+add: 
 Time O(1)
-space O(n)
+space O(1)
+get:
+Time O(n)
+space O(1)
+contin:
+Time O(n)
+space O(1)
+hash:
+Time O(1)
+space O(1)
 ## API
 1. add => addig the key and its value to the table 
 2. get: get the value using key 
