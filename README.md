@@ -39,3 +39,10 @@ To run your tests
 15. [Tree fizz buzz](python/code_challenges/trees/README3.md)
 
 16. [Blog](python/code_challenges/blog/BLOG.md) 
+17. [merge](python/code_challenges/sorting/README1.md)
+18. [quick](python/code_challenges/sorting/README.md)
+
+19. [hash Table](python/code_challenges/hash_table/README.md)
+20. [first word](python/code_challenges/hash_table/README1.md)
+21. [Tree Intersection](python/code_challenges/tree_intersection/README.md)
+22. [hashmap-left-join](python/code_challenges/hash_table/README1.md)
