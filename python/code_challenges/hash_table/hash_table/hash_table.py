@@ -59,6 +59,7 @@ class Hash_table():
             self.arr[idx] = Linked_list()
         self.arr[idx].append((key,value))
 
+
     def contain(self,key):
         idx = self.hash(key)
         if self.arr[idx]:
@@ -68,6 +69,7 @@ class Hash_table():
                     return True
                 current = current.next
         return False
+
 
     def get(self,key):
         idx = self.hash(key)
@@ -80,12 +82,11 @@ class Hash_table():
         return None
         
 
-
     def hash(self,key):
         idx = 0
         for ch in key :
             idx += ord(ch)
-        idx = idx *11 % self.size
+        idx = idx * 11 % self.size
         return idx
 
 
