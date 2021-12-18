@@ -19,7 +19,6 @@ class Graph:
     def add_node(self, value):
         v = Vertex(value)
         self.__adjacency_list[v] = []
-        print(self.__adjacency_list[v])
         return v
 
     
