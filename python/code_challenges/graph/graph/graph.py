@@ -1,4 +1,4 @@
-# from stack_and_queue import Queue, Stack
+from stack_and_queue import Queue
 
 class Vertex:
     def __init__(self, value):
@@ -51,6 +51,25 @@ class Graph:
             return 
         return self.__adjacency_list
 
+    def breadth_first_search(self, start_vertex, action=(lambda vertex: None)):
+        queue = Queue()
+        visited = set()
+
+        queue.enqueue(start_vertex)
+        visited.add(start_vertex)
+
+        while len(queue):
+            current_vertex = queue.dequeue()
+            action(current_vertex)
+
+            neighbors = self.get_neigbors(current_vertex)
+
+            for edge in neighbors:
+                neighbor = edge.vertex
+
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.enqueue(neighbor)
 
 a_graph = Graph()
 n1 = a_graph.add_node("1")
