@@ -49,11 +49,13 @@ class Queue:
     def __init__(self):
         self.rear = None
         self.front = None
-
+        self.count = 0
+    
     def enqueue(self,val):
+        print(val)
         node=Node(val)
 
-        if not self.rear:
+        if not self.front:
             self.front = node
             self.rear = node
         else:
@@ -64,6 +66,8 @@ class Queue:
     def dequeue(self):
         if not self.front:
             raise Exception ("empty queue")
+        self.count = self.count - 1
+        
         temp = self.front
         self.front = self.front.next
         return temp.value
@@ -75,6 +79,9 @@ class Queue:
 
     def is_empty(self):
         return not self.front
+    
+    def __len__(self):
+        return self.count
     
     def __str__(self):
         if self.front:
@@ -89,6 +96,3 @@ class Queue:
             output = "Empty"
             return output
 
-new_stack = Stack()
-new_stack.push(1)
-print(new_stack)

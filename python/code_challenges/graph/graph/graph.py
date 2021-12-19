@@ -1,4 +1,4 @@
-from stack_and_queue import Queue
+from .stack_and_queue import Queue
 
 class Vertex:
     def __init__(self, value):
@@ -34,45 +34,55 @@ class Graph:
         edge = Edge(end_vertex, weight)
         self.__adjacency_list[start_vertex].append(edge)
 
+
     def get_nodes(self):
         result = []
         nodes = self.__adjacency_list.keys()
         for i in nodes:
             result.append(i.value)
         return result
+
+
     def get_neighbors(self, vertex):
         return self.__adjacency_list.get(vertex, [])
 
+
+
     def size(self):
         return len(self.__adjacency_list)
+
 
     def __str__(self):
         if self.__adjacency_list == {}:
             return 
         return self.__adjacency_list
 
-    def breadth_first_search(self, start_vertex, action=(lambda vertex: None)):
+
+    def breadth_first_search(self, start_vertex):
         queue = Queue()
         visited = set()
-
+        result = []
         queue.enqueue(start_vertex)
         visited.add(start_vertex)
 
-        while len(queue):
+        while queue.front:
             current_vertex = queue.dequeue()
-            action(current_vertex)
-
-            neighbors = self.get_neigbors(current_vertex)
+            print(1,current_vertex)
+            result.append(current_vertex.value)
+            neighbors = self.get_neighbors(current_vertex)
 
             for edge in neighbors:
                 neighbor = edge.vertex
-
+                
                 if neighbor not in visited:
-                    visited.add(neighbor)
                     queue.enqueue(neighbor)
-
+                    visited.add(neighbor)
+                    # print(queue)
+        return result
 a_graph = Graph()
 n1 = a_graph.add_node("1")
 n2 = a_graph.add_node("2")
 n3 = a_graph.add_node("3")
 a_graph.add_edge(n1,n2)
+a_graph.add_edge(n2,n3)
+print(a_graph.breadth_first_search(n1))
