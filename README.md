@@ -38,4 +38,4 @@ To run your tests
 14. [Trees breadth first](python/code_challenges/trees/README2.md)
 15. [Tree fizz buzz](python/code_challenges/trees/README3.md)
 
-16. [Blog](python/code_challenges/blog/BLOG.md) 
+16. [sorting](python/code_challenges/blog/BLOG.md) 
