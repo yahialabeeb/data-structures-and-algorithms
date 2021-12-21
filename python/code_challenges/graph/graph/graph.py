@@ -79,10 +79,15 @@ class Graph:
                     visited.add(neighbor)
                     # print(queue)
         return result
-a_graph = Graph()
-n1 = a_graph.add_node("1")
-n2 = a_graph.add_node("2")
-n3 = a_graph.add_node("3")
-a_graph.add_edge(n1,n2)
-a_graph.add_edge(n2,n3)
-print(a_graph.breadth_first_search(n1))
+    def depth_first(self, start_vertex):
+        visited = set()
+        result = []
+
+
+# a_graph = Graph()
+# n1 = a_graph.add_node("1")
+# n2 = a_graph.add_node("2")
+# n3 = a_graph.add_node("3")
+# a_graph.add_edge(n1,n2)
+# a_graph.add_edge(n2,n3)
+# print(a_graph.breadth_first_search(n1))
