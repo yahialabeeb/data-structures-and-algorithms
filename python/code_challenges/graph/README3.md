@@ -8,11 +8,11 @@ Create a method traversal over the Graph using Depth First concept
 * Space: O(n)
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![board](depth_first.jpg)
 
 ## Requirements
 Ensure your complete solution follows the standard requirements.
 
 1. Write [unit tests](tests/test_depth.py)
 1. Follow the [template for a well-formatted README](Challenge_Documentation.md)
-1. Submit the assignment following [these instructions](../../Challenge_Submission)
+1. Submit the assignment following [these instructions](sum_ins.md)
