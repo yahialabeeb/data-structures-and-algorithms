@@ -1,4 +1,4 @@
-from .stack_and_queue import Queue
+from .stack_and_queue import Queue, Stack
 
 class Vertex:
     def __init__(self, value):
@@ -80,14 +80,32 @@ class Graph:
                     # print(queue)
         return result
     def depth_first(self, start_vertex):
+        stack = Stack()
         visited = set()
         result = []
+        stack.push(start_vertex)
+        visited.add(start_vertex)
+        while stack.top:
+            current_vertex = stack.peek()
+
+            neighbors = self.get_neighbors(current_vertex)
+            count = 0
+            for edge in neighbors:
+                neighbor = edge.vertex
+                
+                if neighbor not in visited:
+                    count +=1 
+                    stack.push(neighbor)
+                    visited.add(stack.peek())
+            if not count :
+                result.append(stack.pop().value.value)
+        return result
 
 
-# a_graph = Graph()
-# n1 = a_graph.add_node("1")
-# n2 = a_graph.add_node("2")
-# n3 = a_graph.add_node("3")
-# a_graph.add_edge(n1,n2)
-# a_graph.add_edge(n2,n3)
-# print(a_graph.breadth_first_search(n1))
+a_graph = Graph()
+n1 = a_graph.add_node("1")
+n2 = a_graph.add_node("2")
+n3 = a_graph.add_node("3")
+a_graph.add_edge(n1,n2)
+a_graph.add_edge(n2,n3)
+print(a_graph.depth_first(n1))
