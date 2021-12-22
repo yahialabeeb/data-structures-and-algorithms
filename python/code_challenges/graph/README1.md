@@ -1,5 +1,5 @@
 # Challenge Summary
-create a function visited all vertex and display them
+create a function take a graph visited all vertex in it and display them
 
 ## Whiteboard Process
 ![board](breadth first.jpg)
