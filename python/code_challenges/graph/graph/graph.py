@@ -109,3 +109,4 @@ n3 = a_graph.add_node("3")
 a_graph.add_edge(n1,n2)
 a_graph.add_edge(n2,n3)
 print(a_graph.depth_first(n1))
+
